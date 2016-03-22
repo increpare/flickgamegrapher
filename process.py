@@ -80,7 +80,7 @@ if not os.path.exists("svg"):
 
 #processFile ("2476f4a312479277b044.txt")
 
-htmlfile="<html><head><style>img{max-width:100%;}div{text-align:center;border:1px solid black;width:600px;}</style></head><body>\n"
+htmlfile="<html><head><style>img{max-width:100%;}div{text-align:center;border:1px solid black;width:600px;}</style></head><body><center><div>this page graphs the structures of various games made with <a href='http://www.flickgame.org'>flickgame</a> that've appeared on <a href='http://flickgamegallery.tumblr.com/'>flickgamegallery.tumblr.com</a>.</div><p>\n"
 
 onlyfiles = [f for f in listdir("lib") if isfile(join("lib", f))]
 for fn in onlyfiles:
@@ -93,7 +93,7 @@ for fn in onlyfiles:
 	fnraw = fn.split('.')[0]
 	htmlfile = htmlfile + '<div><img src="svg/'+fn+'.svg"><p><a href="http://www.flickgame.org/play.html?p='+fnraw+'">'+fnraw+"</a></div><p>"
 
-htmlfile = htmlfile+"<p><div><a href='https://github.com/increpare/flickgamegrapher'>source code</a></div></body></html>"
+htmlfile = htmlfile+"<p><div><a href='https://github.com/increpare/flickgamegrapher'>source code</a></div></center></body></html>"
 
 textfile = open("index.html","w")
 textfile.write(htmlfile);
