@@ -1,0 +1,10 @@
+digraph {
+	node [margin=0 fontcolor=black fontsize=32 shape="point" width=0.2 label="" ]
+	1 [shape="circle"]
+	1 -> 2
+	2 -> 3
+	3 -> 4
+	4 -> 5
+	5 -> 6
+	6 -> 7
+}
