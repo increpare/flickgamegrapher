@@ -59,7 +59,7 @@ def processFile(filename):
 	print("hyperlinks = " +str(hyperlinks))
 	print("lines = " +str(lines))
 	print ("reachablepages = " +str(reachablepages))
-	graphstr = 'digraph {\n\tnode [margin=0 fontcolor=black fontsize=32 shape="point" width=0.2 label="" ]\n\t1 [shape="circle"]\n'
+	graphstr = 'digraph {\n\tsplines=true;\n\tnode [margin=0 fontcolor=black fontsize=32 shape="point" width=0.1 label="" ]\n\t1 [shape="circle"]\n'
 	for l in lines:
 		pair = l.split(",")
 		if (pair[0] in reachablepages) and (pair[0] != pair[1]):
